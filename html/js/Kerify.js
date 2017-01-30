@@ -84,11 +84,11 @@
         var $text = typeof(json) !== 'undefined' ? json['msg'] : validation[500][1];
         var $response = typeof(json) !== 'undefined' ? json['response'] : '';
         
-        $location.find('.response').text();
+        $location.find('textarea').text();
 
         $location.find('i').removeClass().addClass($class);
         $location.find('p').text($text);
-        $location.find('.response').val($response);
+        $location.find('textarea').text($response);
 
         $base.removeClass('hidden');
 
