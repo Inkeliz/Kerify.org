@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Need to verify the PGP signature? The Kerify is the easiest software to check the PGP signature for free!">
+    <meta name="author" content="Inkeliz">
+
+    <title>Kerify: Verify PGP signature easily!</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/vendor/simple-line-icons.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Kerify</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#verify">Verify</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#encrypt">Encrypt</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h4 class="Bt"></h4>
+                            <h1>Check the signature of PGP message in just one click and stop lose your time with CLI.</h1>
+                            <h4 class="Bs"></h4>
+                            <a href="#verify" class="btn btn-outline btn-xl page-scroll">Let's get verified!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="verify" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Verify PGP signature</h2>
+                    <p>Received a signed message? Insert the signed message and the public key of the sender, we will check if everything is okay.</p>
+
+                    <div class="hidden response signature">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="return">
+                                    <i class=""></i>
+                                    <p></p>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-outline btn-xl page-scroll btn-block" data-reset="signature">Try again!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form name="signature">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label><i class="icon-envelope"></i> Message</label>
+                            <textarea placeholder="" name="text" class="Te"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label><i class="icon-key"></i> Public Key</label>
+                            <textarea placeholder="" name="key" class="Tk"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-outline btn-xl page-scroll btn-block" type="submit" disabled>Verify!</button>
+                        </div>
+                    </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="encrypt" class="download bg-secondary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Encrypt PGP message</h2>
+                    <p>Need to send an encrypted message to someone? Type your text and insert the public key of the receiver, we will do the job.</p>
+
+                    <div class="hidden response encrypt">
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="return">
+                                    <i class=""></i>
+                                    <p></p>
+                                    <textarea></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-outline btn-xl page-scroll btn-block" data-reset="encrypt">Try again!</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <form name="encrypt">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label><i class="icon-envelope"></i> Message</label>
+                            <textarea placeholder="" name="text" class="Tt"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                            <label><i class="icon-key"></i> Public Key</label>
+                            <textarea placeholder="" name="key" class="Tk"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button class="btn btn-outline btn-xl page-scroll btn-block" type="submit" disabled>Encrypt!</button>
+                        </div>
+                    </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Unlimited Features</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="feature-item">
+                                    <i class="icon-globe text-primary"></i>
+                                    <h3>Online</h3>
+                                    <p class="text-muted">Only the internet connection is required to use, you don't need to install it.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="feature-item">
+                                    <i class="icon-equalizer text-primary"></i>
+                                    <h3>Easy</h3>
+                                    <p class="text-muted">Just copy and paste the message and the public key and we will do everything!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="feature-item">
+                                    <i class="icon-wallet text-primary"></i>
+                                    <h3>Free</h3>
+                                    <p class="text-muted">You can use all features without pay, this website is totally free of charge.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="feature-item">
+                                    <i class="icon-lock-open text-primary"></i>
+                                    <h3>Open Source</h3>
+                                    <p class="text-muted">Explore our github to see all code behind, you can create your own Kerify.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>Stop waiting.<br>Start verifying.</h2>
+                <a href="#verify" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container">
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                    <a href="https://twitter.com/Inkeliz"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="https://facebook.com/InkelizCoder"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li class="social-github">
+                    <a href="https://facebook.com/InkelizCoder"><i class="icon-social-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Website created by Inkeliz, using template from Start Bootstrap and powered by PHP and GnuPG!</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- Verify API JavaScript -->
+    <script src="js/Kerify-api.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/Kerify.js"></script>
+
+</body>
+
+</html>
