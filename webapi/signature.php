@@ -1,12 +1,11 @@
 <?php
 
 header("Access-Control-Allow-Origin: *");
+http_response_code(400);
 
 require '../lib/Kerify.php';
 
 if(isset($_POST['text'], $_POST['key'])) {
-
-    http_response_code(400);
 
     $Kerify = new Kerify($_POST['key'], $_POST['text']);
     
