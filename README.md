@@ -38,8 +38,6 @@ $ch = curl_init('http://api.kerify.org/signature.php');
 
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYHOST => false,
-    CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_POSTFIELDS => http_build_query([
         'key' => $key,
         'text' => $text
@@ -61,8 +59,6 @@ $ch = curl_init('http://api.kerify.org/encrypt.php');
 
 curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_SSL_VERIFYHOST => false,
-    CURLOPT_SSL_VERIFYPEER => false,
     CURLOPT_POSTFIELDS => http_build_query([
         'key' => $key,
         'text' => $text
